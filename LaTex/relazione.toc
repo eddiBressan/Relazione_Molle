@@ -1,0 +1,7 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {1}Obiettivo dell'esperienza}{2}{}%
+\contentsline {section}{\numberline {2}Cenni teorici}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Deformazione elastica}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Metodo statico}{2}{}%
+\contentsline {subsection}{\numberline {2.3}Metodo dinamico}{3}{}%

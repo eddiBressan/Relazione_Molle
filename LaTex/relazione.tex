@@ -1,0 +1,185 @@
+\documentclass[a4paper,12pt]{article}
+
+% Pacchetti fondamentali
+\usepackage[utf8]{inputenc}   % Codifica caratteri
+\usepackage[italian]{babel}    % Lingua italiana
+\usepackage{amsmath}           % Formule matematiche avanzate
+\usepackage{graphicx}          % Inserimento immagini
+\usepackage{geometry}          % Gestione margini
+ \geometry{margin=2.5cm}
+\usepackage{booktabs}          % Tabelle professionali
+\usepackage{physics}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{parskip}
+
+\title{Misura della costante elastica di una molla elicoidale}
+\author{Eddi Bressan}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Obiettivo dell'esperienza}
+Lo scopo dell'esperienza è lo studio della deformazione di una molla elicoidale tramite 2 metodi: statico e dinamico.
+
+\section{Cenni teorici}
+
+\subsection{Deformazione elastica}
+Una deformazione è detta \textbf{elastica} se il corpo torna allo stato originario quando
+vengono meno le forze che ne hanno causato la deformazione.
+
+Tale deformazione può essere definita \textbf{elastica} se le forze applicate sono inferiori
+ad un limite dipendente da vari fattori: materiale, temperatura, tipo di deformazione considerata, etc.
+Oltre questo limite le deformazioni divengono anaelastiche, ovvero permanenti.
+
+Nelle deformazioni elastiche si osserva una relazione di proporzionalità tra sollecitazione e deformazione:
+$$
+\Delta L \propto F
+$$
+\noindent
+Questo comportamento è noto come \textbf{legge di Hooke}.
+
+La legge di Hooke è valida per la maggior parte dei minerali, per il vetro,
+per i materiali ceramici e per i metalli. Per i materiali duttili invece è vera per carichi modesti.
+
+Quando all'estremità libera di una molla è applicata una forza,
+la molla esercita una forza di richiamo proporzionale allo spostamento di tale 
+estremo rispetto alla posizione di equilibrio.
+
+Il modulo della forza di richiamo è proporzionale alla deformazione (legge di Hooke):
+$$
+\vec{F} = -k \vec{x}
+$$
+Dove $\vec{x}$ è la deformazione della molla rispetto la sua lunghezza normale $\vec{x} = (l - l_{0})\hat{x}$
+con $l_0$ la lunghezza della molla a riposo.
+
+La costante di proporzionalità $k$ è detta \textbf{costante elastica} della molla e 
+dipende dal materiale di cui è costituita, dal diametro del filo e dal numero di spire della molla.
+
+
+\subsection{Metodo statico}
+La costante elastica di una molla può essere determinata sperimentalmente misurando
+le elongazioni $\Delta l$ al variare delle forze applicate.
+
+Se all'estremità inferiore di una molla sospesa verticalmente è appesa una massa m,
+la forza applicata coincide con la forza peso della massa e la legge di Hooke si riscrive
+nel seguente modo:
+$$
+mg = k {\Delta l} = k (l-l_0)
+$$
+Usando diverse masse e misurando i rispettivi $\Delta l$ ottengo diverse misure di k:
+$$
+k_i = \frac{m_i g}{\Delta l_i}
+$$
+Nel caso reale alla molla è già appeso un piattello (di massa $m_p$),
+inoltre la molla ha una sua massa ed è quindi anch'essa soggetta alla forza peso.
+Subisce già un allungamento $l_s$ anche a piattello scarico.
+
+Misurando la differenza tra l'allungamento a piatto scarico:
+$$
+(m_p + m_{eff.statica})g = k(l_s - l_0)
+$$
+e l'allungamento in seguito all'aggiunta di una massa $m_i$:
+$$
+(m_i + m_p + m_{eff.statica})g = k(l_i - l_0)
+$$
+e facendo la differenza membro a membro tra le due operazioni otteniamo:
+$$
+m_i g = k_i (l_i - l_s)
+$$
+Da cui il valore della costante elastica della molla:
+$$
+k_i = \frac{m_i g}{(l_i - l_s)}
+$$
+Gli errori sono tutti di sensibilità per cui possiamo scrivere:
+$$
+\frac{\Delta k_i}{k_i} = \frac{\Delta m_i}{m_i}+2\frac{\Delta l}{(l_i - l_s)}
+$$
+
+\subsection{Metodo dinamico}
+Partendo dalla legge di Hooke:
+$$
+mg = k \Delta l = k(l_{eq} - l_0)
+$$
+Se applicando una forza alla massa appesa alla molla sposto la molla dalla sua posizione di equilibrio e la lascio
+andare, questa si metterà ad oscillare rispetto la posizione di equilibrio $l_{eq}$ con equazione:
+$$
+m\ddot{x} + kx = mg
+$$
+La soluzione di questa equazione differenziale sarà data da una soluzione dell'equazione
+omogenea:
+$$
+m\ddot{x} + kx = 0 \quad \text{o} \quad \ddot{x} + \frac{k}{m}x = 0
+$$
+Sommata ad una soluzione particolare dell'equazione non omogenea.
+Le condizioni iniziali sono:
+$$
+\begin{cases}
+    \dot{x}(t=0)=0 \\
+    x(t=0)=x_0
+\end{cases}
+$$
+La soluzione dell'equazione differenziale omogenea è del tipo $x(t) = A \sin(\omega t+\phi)$
+mentre una soluzione particolare dell'equazione non omogenea è la soluzione costante:
+$$
+x = \frac{mg}{k} = l_{eq} - l_0
+$$
+La soluzione completa è quindi:
+$$
+x(t) = A \sin(\omega t+\phi) + l_{eq} - l_0
+$$
+Con:
+$$
+\begin{cases}
+    \dot{x}(t=0)=0 \\
+    x(t=0)=x_0
+\end{cases}
+$$
+Abbiamo quindi:
+$$
+\begin{cases}
+    \dot{x} = A \omega \cos(\omega t + \phi) = 0 \\
+    \ddot{x} = -A \omega^2 \sin(\omega t + \phi)
+\end{cases}
+$$
+Da cui ricaviamo:
+$$
+-A \omega^2 \sin(\omega t + \phi) + \frac{k}{m} A \sin(\omega t + \phi) + \frac{k}{m}[l_{eq} - l_0] = g
+$$
+Dobbiamo perciò avere:
+$$
+\omega = \sqrt{\frac{k}{m}}
+$$
+Ovvero la pulsazione non cambia a causa della forza di gravità.
+
+La condizione iniziale $\dot{x}(t=0)=0$ fornisce:
+$$
+\cos(\phi) = 0 \quad \text{o} \quad \phi = \frac{\pi}{2} 
+$$
+Mentre applicando la condizione $x(t=0)=x_0$ otteniamo:
+$$
+x_0 = A + l_{eq} - l_0
+$$
+Da cui:
+$$
+A = x_0 - (l_{eq} - l_0)
+$$
+Per una soluzione completa data da:
+$$
+x(t) = [x_0 - (l_{eq} - l_0)]\sin(\sqrt{\frac{k}{m}}t+\frac{\pi}{2}) + (l_{eq} - l_0) 
+$$
+Il fatto che $\omega = \sqrt{\frac{k}{m}}$ ci permette di calcolare la costante elastica della molla dalla
+misura del periodo di oscillazione:
+$$
+T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{m}{k}}
+$$
+Ma in questo caso la massa è tutta la massa appesa alla molla, inclusa la massa del supporto.
+
+
+\end{document}
