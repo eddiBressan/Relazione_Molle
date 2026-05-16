@@ -306,7 +306,7 @@ $$
         Massa appesa                 & Massa ($M_i$)  & variabile (4.97 - 49.99)g \\
         \addlinespace
         Molla      & Massa ($M_m$)     &  29.96 g                  \\
-                                 & Lunghezza ($l_M$) & variabile (19.9 - 65.3) cm           \\
+                                 & Lunghezza ($l_i$) & variabile (19.9 - 65.3) cm           \\
         \addlinespace
         Stativo                  & Supporto rigido   & ---                    \\
         \bottomrule
@@ -320,6 +320,268 @@ $$
     \item Misura della lunghezza della molla a riposo $l_0$.
 \end{itemize}
 
-\subsection{Set-up dell'apparato}
+ 
+%per favore scrivi meglio la sintassi coi doppi dollari è terribile...       :(
+
+
+\subsection{Set-up dell'apparato}     
+\subsubsection{Misura tramite metodo statico}
+\begin{itemize}
+    \item \textbf{Misura della lunghezza a riposo ($l_0$):} La molla è stata inizialmente vincolata al supporto verticale (stativo) lasciandola pendere liberamente in assenza di carichi applicati. Tramite il metro, è stata rilevata la quota corrispondente all'estremità inferiore della molla, registrando tale valore come lunghezza intrinseca a riposo $l_0$.
+    
+    \item \textbf{Misura a piattello scarico ($l_s$):} Si è proceduto ad agganciare il piattello porta-masse vuoto all'estremità inferiore del sistema. Una volta raggiunto l'equilibrio statico, è stata misurata la nuova lunghezza della molla $l_s$
+    
+    \item \textbf{Applicazione incrementale dei carichi:} Sull'apposito piattello sono state posizionate, in successione e una alla volta, le masse campionate a disposizione .
+    
+    \item \textbf{Rilevazione delle lunghezze in equilibrio:} Raggiunta la condizione stazionaria di equilibrio meccanico (in cui la forza elastica della molla bilancia esattamente la forza peso totale), si è effettuata la lettura della lunghezza finale.
+    
+    \item \textbf{Ripetibilità e campionamento dei dati:} L'intera procedura di carico è stata reiterata per un totale di 5 volte con masse differenti.
+\end{itemize}
+\subsubsection{Misura tramite metodo dinamico}
+\begin{itemize}
+    \item \textbf{Selezione e configurazione delle masse:} Sono state selezionate 5 differenti masse per studiare la dipendenza del periodo di oscillazione $T$ in funzione della massa totale sospesa.
+    
+    \item \textbf{Misura del tempo cumulativo:} Per ciascuna massa, dopo aver impresso un piccolo spostamento verticale rispetto alla posizione di equilibrio, il sistema è stato lasciato oscillare liberamente. Al fine di minimizzare l'incertezza associata al tempo di reazione dell'operatore nell'attivazione e nell'arresto del cronometro, non è stato misurato il singolo periodo ma 5.
+    
+    \item \textbf{Reiterazione e struttura dei set di dati:} Per ognuna delle 5 configurazioni a masse diverse la misura di $\tau = 5T$ è stata ripetuta 10 volte
+    
+    \item \textbf{Misure indipendenti a piattello scarico:} In corrispondenza di ciascuna delle sessioni di misura relative alle 5 masse, è stato acquisito un set indipendente di misure considerando il solo piattello scarico. Questa operazione di calibrazione locale è cruciale per la successiva elaborazione dati.
+\end{itemize}
+
+\section{Risultati delle Misure}
+
+In questa sezione vengono riportati esclusivamente i dati grezzi raccolti direttamente tramite le misurazioni in laboratorio, prima di procedere a qualsiasi elaborazione statistica o analisi fisica. I dati si riferiscono all'unica molla utilizzata durante l'esperienza.
+
+\subsection{Misure Statiche}
+Per la caratterizzazione statica della molla, sono state rilevate le lunghezze corrispondenti ai diversi carichi applicati. Le misure di riferimento iniziale sono:
+\begin{itemize}
+    \item \textbf{Lunghezza della molla a riposo ($l_0$):} \dots\dots mm
+    \item \textbf{Lunghezza della molla a piattello scarico ($l_s$):} \dots\dots mm
+\end{itemize}
+
+Nella Tabella~\ref{tab:misure_statiche} sono elencati i valori delle masse nominali inserite e le corrispondenti lunghezze totali della molla lette sul regolo millimetrato.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{cc}
+\hline
+\textbf{Massa applicata $m_i$ (g)} & \textbf{Lunghezza misurata $\ell_i$ (mm)} \\ \hline
+\dots & \dots \\
+\dots & \dots \\
+\dots & \dots \\
+\dots & \dots \\
+\dots & \dots \\
+\dots & \dots \\ \hline
+\end{tabular}
+\caption{Dati grezzi delle misure statiche: masse applicate e lunghezze complessive della molla.}
+\label{tab:misure_statiche}
+\end{table}
+
+\subsection{Misure Dinamiche ed Istogrammi delle Distribuzioni}
+Per la caratterizzazione dinamica sono state impiegate 5 configurazioni di massa differenti. Ciascuna sessione prevede l'acquisizione del tempo totale impiegato dal sistema per compiere 5 oscillazioni complete ($\tau$). 
+
+Per ogni massa, la misura è stata ripetuta per 12 volte consecutive sia nella condizione di piattello scarico (riferimento indipendente), sia nella condizione di piattello carico. Di seguito vengono riportate le tabelle dei tempi grezzi affiancate dai rispettivi istogrammi per la verifica della distribuzione normale dei dati.
+
+% ==========================================
+% MASSA 1
+% ==========================================
+\subsubsection{Configurazione Massa $m_1 = \dots$ g}
+\noindent
+\begin{minipage}[c]{0.45\textwidth}
+\centering
+\small
+\begin{tabular}{ccc}
+\hline
+\textbf{Ripetizione} & \textbf{Scarico (s)} & \textbf{Carico (s)} \\ \hline
+1  & \dots & \dots \\
+2  & \dots & \dots \\
+3  & \dots & \dots \\
+4  & \dots & \dots \\
+5  & \dots & \dots \\
+6  & \dots & \dots \\
+7  & \dots & \dots \\
+8  & \dots & \dots \\
+9  & \dots & \dots \\
+10 & \dots & \dots \\
+11 & \dots & \dots \\
+12 & \dots & \dots \\ \hline
+\end{tabular}
+\captionof{table}{Tempi grezzi (5 oscillazioni) per la Massa 1.}
+\label{tab:dinamica_massa1}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.50\textwidth}
+\centering
+% Quando avrai il grafico pronto, sostituisci il \framebox con:
+% \includegraphics[width=\textwidth]{nome_file_grafico1.png}
+\framebox{\begin{minipage}[c][5.5cm][c]{0.95\textwidth}
+    \centering
+    \itshape Spazio per Istogramma\\(Verifica Distribuzione Normale\\Massa 1)
+\end{minipage}}
+\captionof{figure}{Istogramma delle frequenze dei tempi per la Massa 1.}
+\label{fig:isto_massa1}
+\end{minipage}
+
+\vspace{0.8cm} % Spazio verticale prima della massa successiva
+
+% ==========================================
+% MASSA 2
+% ==========================================
+\subsubsection{Configurazione Massa $m_2 = \dots$ g}
+\noindent
+\begin{minipage}[c]{0.45\textwidth}
+\centering
+\small
+\begin{tabular}{ccc}
+\hline
+\textbf{Ripetizione} & \textbf{Scarico (s)} & \textbf{Carico (s)} \\ \hline
+1  & \dots & \dots \\
+2  & \dots & \dots \\
+3  & \dots & \dots \\
+4  & \dots & \dots \\
+5  & \dots & \dots \\
+6  & \dots & \dots \\
+7  & \dots & \dots \\
+8  & \dots & \dots \\
+9  & \dots & \dots \\
+10 & \dots & \dots \\
+11 & \dots & \dots \\
+12 & \dots & \dots \\ \hline
+\end{tabular}
+\captionof{table}{Tempi grezzi (5 oscillazioni) per la Massa 2.}
+\label{tab:dinamica_massa2}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.50\textwidth}
+\centering
+\framebox{\begin{minipage}[c][5.5cm][c]{0.95\textwidth}
+    \centering
+    \itshape Spazio per Istogramma\\(Verifica Distribuzione Normale\\Massa 2)
+\end{minipage}}
+\captionof{figure}{Istogramma delle frequenze dei tempi per la Massa 2.}
+\label{fig:isto_massa2}
+\end{minipage}
+
+\vspace{0.8cm}
+
+% ==========================================
+% MASSA 3
+% ==========================================
+\subsubsection{Configurazione Massa $m_3 = \dots$ g}
+\noindent
+\begin{minipage}[c]{0.45\textwidth}
+\centering
+\small
+\begin{tabular}{ccc}
+\hline
+\textbf{Ripetizione} & \textbf{Scarico (s)} & \textbf{Carico (s)} \\ \hline
+1  & \dots & \dots \\
+2  & \dots & \dots \\
+3  & \dots & \dots \\
+4  & \dots & \dots \\
+5  & \dots & \dots \\
+6  & \dots & \dots \\
+7  & \dots & \dots \\
+8  & \dots & \dots \\
+9  & \dots & \dots \\
+10 & \dots & \dots \\
+11 & \dots & \dots \\
+12 & \dots & \dots \\ \hline
+\end{tabular}
+\captionof{table}{Tempi grezzi (5 oscillazioni) per la Massa 3.}
+\label{tab:dinamica_massa3}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.50\textwidth}
+\centering
+\framebox{\begin{minipage}[c][5.5cm][c]{0.95\textwidth}
+    \centering
+    \itshape Spazio per Istogramma\\(Verifica Distribuzione Normale\\Massa 3)
+\end{minipage}}
+\captionof{figure}{Istogramma delle frequenze dei tempi per la Massa 3.}
+\label{fig:isto_massa3}
+\end{minipage}
+
+\vspace{0.8cm}
+
+% ==========================================
+% MASSA 4
+% ==========================================
+\subsubsection{Configurazione Massa $m_4 = \dots$ g}
+\noindent
+\begin{minipage}[c]{0.45\textwidth}
+\centering
+\small
+\begin{tabular}{ccc}
+\hline
+\textbf{Ripetizione} & \textbf{Scarico (s)} & \textbf{Carico (s)} \\ \hline
+1  & \dots & \dots \\
+2  & \dots & \dots \\
+3  & \dots & \dots \\
+4  & \dots & \dots \\
+5  & \dots & \dots \\
+6  & \dots & \dots \\
+7  & \dots & \dots \\
+8  & \dots & \dots \\
+9  & \dots & \dots \\
+10 & \dots & \dots \\
+11 & \dots & \dots \\
+12 & \dots & \dots \\ \hline
+\end{tabular}
+\captionof{table}{Tempi grezzi (5 oscillazioni) per la Massa 4.}
+\label{tab:dinamica_massa4}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.50\textwidth}
+\centering
+\framebox{\begin{minipage}[c][5.5cm][c]{0.95\textwidth}
+    \centering
+    \itshape Spazio per Istogramma\\(Verifica Distribuzione Normale\\Massa 4)
+\end{minipage}}
+\captionof{figure}{Istogramma delle frequenze dei tempi per la Massa 4.}
+\label{fig:isto_massa4}
+\end{minipage}
+
+\vspace{0.8cm}
+
+% ==========================================
+% MASSA 5
+% ==========================================
+\subsubsection{Configurazione Massa $m_5 = \dots$ g}
+\noindent
+\begin{minipage}[c]{0.45\textwidth}
+\centering
+\small
+\begin{tabular}{ccc}
+\hline
+\textbf{Ripetizione} & \textbf{Scarico (s)} & \textbf{Carico (s)} \\ \hline
+1  & \dots & \dots \\
+2  & \dots & \dots \\
+3  & \dots & \dots \\
+4  & \dots & \dots \\
+5  & \dots & \dots \\
+6  & \dots & \dots \\
+7  & \dots & \dots \\
+8  & \dots & \dots \\
+9  & \dots & \dots \\
+10 & \dots & \dots \\
+11 & \dots & \dots \\
+12 & \dots & \dots \\ \hline
+\end{tabular}
+\captionof{table}{Tempi grezzi (5 oscillazioni) per la Massa 5.}
+\label{tab:dinamica_massa5}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.50\textwidth}
+\centering
+\framebox{\begin{minipage}[c][5.5cm][c]{0.95\textwidth}
+    \centering
+    \itshape Spazio per Istogramma\\(Verifica Distribuzione Normale\\Massa 5)
+\end{minipage}}
+\captionof{figure}{Istogramma delle frequenze dei tempi per la Massa 5.}
+\label{fig:isto_massa5}
+\end{minipage}
+
+
 
 \end{document}
