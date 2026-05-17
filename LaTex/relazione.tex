@@ -355,8 +355,8 @@ In questa sezione vengono riportati esclusivamente i dati grezzi raccolti dirett
 \subsection{Misure Statiche}
 Per la caratterizzazione statica della molla, sono state rilevate le lunghezze corrispondenti ai diversi carichi applicati. Le misure di riferimento iniziale sono:
 \begin{itemize}
-    \item \textbf{Lunghezza della molla a riposo ($l_0$):} \dots\dots mm
-    \item \textbf{Lunghezza della molla a piattello scarico ($l_s$):} \dots\dots mm
+    \item \textbf{Lunghezza della molla a riposo ($l_0$):} 19.9 cm
+    \item \textbf{Lunghezza della molla a piattello scarico ($l_s$):} 32.4 cm
 \end{itemize}
 
 Nella Tabella~\ref{tab:misure_statiche} sono elencati i valori delle masse nominali inserite e le corrispondenti lunghezze totali della molla lette sul regolo millimetrato.
@@ -365,13 +365,12 @@ Nella Tabella~\ref{tab:misure_statiche} sono elencati i valori delle masse nomin
 \centering
 \begin{tabular}{cc}
 \hline
-\textbf{Massa applicata $m_i$ (g)} & \textbf{Lunghezza misurata $\ell_i$ (mm)} \\ \hline
-\dots & \dots \\
-\dots & \dots \\
-\dots & \dots \\
-\dots & \dots \\
-\dots & \dots \\
-\dots & \dots \\ \hline
+\textbf{Massa applicata $m_i$ (g)} & \textbf{Lunghezza misurata $l_i$ (cm)} \\ \hline
+4.97 & 35.7 \\
+10.30 & 38.9 \\
+20.00 & 45.6 \\
+30.03 & 52.3 \\
+49.99 & 65.3 \\ \hline
 \end{tabular}
 \caption{Dati grezzi delle misure statiche: masse applicate e lunghezze complessive della molla.}
 \label{tab:misure_statiche}
@@ -385,7 +384,7 @@ Per ogni massa, la misura è stata ripetuta per 12 volte consecutive sia nella c
 % ==========================================
 % MASSA 1
 % ==========================================
-\subsubsection{Configurazione Massa $m_1 = \dots$ g}
+\subsubsection*{Configurazione Massa $m_1 = \dots$ g}
 \noindent
 \begin{minipage}[c]{0.45\textwidth}
 \centering
@@ -427,7 +426,7 @@ Per ogni massa, la misura è stata ripetuta per 12 volte consecutive sia nella c
 % ==========================================
 % MASSA 2
 % ==========================================
-\subsubsection{Configurazione Massa $m_2 = \dots$ g}
+\subsubsection*{Configurazione Massa $m_2 = \dots$ g}
 \noindent
 \begin{minipage}[c]{0.45\textwidth}
 \centering
@@ -467,7 +466,7 @@ Per ogni massa, la misura è stata ripetuta per 12 volte consecutive sia nella c
 % ==========================================
 % MASSA 3
 % ==========================================
-\subsubsection{Configurazione Massa $m_3 = \dots$ g}
+\subsubsection*{Configurazione Massa $m_3 = \dots$ g}
 \noindent
 \begin{minipage}[c]{0.45\textwidth}
 \centering
@@ -507,7 +506,7 @@ Per ogni massa, la misura è stata ripetuta per 12 volte consecutive sia nella c
 % ==========================================
 % MASSA 4
 % ==========================================
-\subsubsection{Configurazione Massa $m_4 = \dots$ g}
+\subsubsection*{Configurazione Massa $m_4 = \dots$ g}
 \noindent
 \begin{minipage}[c]{0.45\textwidth}
 \centering
@@ -547,7 +546,7 @@ Per ogni massa, la misura è stata ripetuta per 12 volte consecutive sia nella c
 % ==========================================
 % MASSA 5
 % ==========================================
-\subsubsection{Configurazione Massa $m_5 = \dots$ g}
+\subsubsection*{Configurazione Massa $m_5 = \dots$ g}
 \noindent
 \begin{minipage}[c]{0.45\textwidth}
 \centering
@@ -581,6 +580,37 @@ Per ogni massa, la misura è stata ripetuta per 12 volte consecutive sia nella c
 \captionof{figure}{Istogramma delle frequenze dei tempi per la Massa 5.}
 \label{fig:isto_massa5}
 \end{minipage}
+
+\subsection{Analisi dati}
+\subsubsection*{Misura di k, metodo statico}
+Come si vede dalla teoria (!!!... non so se è inserito!!!) nel metodo statico k risulta essere:
+$$k_i = \frac{m_ig}{l_i-l_s}$$
+con errore:
+$$\Delta k_i = k_i(\frac{\Delta m_i}{m_i} + 2\frac{\Delta l}{l_i-l_s})$$
+
+\begin{table}[htbp]
+\centering
+\caption{Dati sperimentali raccolti per la determinazione della costante elastica $k$. La lunghezza a riposo della molla è $l_s = 32.4\,\text{cm}$ .}
+\label{tab:dati_molla}
+\begin{tabular}{cc}
+\toprule
+$k_i$ (N/m) & $\Delta k_i$ (N/m) \\
+\midrule
+1.477 & 0.048 \\
+1.555 & 0.025 \\
+1.486 & 0.012 \\
+1.480 & 0.008 \\
+1.491 & 0.005 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Il valore scelto è l'ultimo, quello che corrisponde ad un allungamento più grande, infatti al crescere di $(l_i - l_s)$ il suo termine nella propagazione degli errori diventa più piccolo.
+Lo stesso ragionamento può essere fatto con la massa.
+L'approccio scelto è forzato dal fatto che le misure non sono indipendenti, infatti $l_s$ è stata misurata una sola volta all'inizio dell'esperienza.
+
+$$k = (1.491 \pm 0.005)\,\text{N/m}$$
+
 
 
 
