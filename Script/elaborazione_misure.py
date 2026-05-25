@@ -33,7 +33,7 @@ for i, nome_set in enumerate(labels):
     tau_medio = np.mean(dati)
     tau_medi.append(round(float(tau_medio), 3))
 
-    varianza = np.var(dati)
+    varianza = np.var(dati,ddof=1)
     varianze.append(varianza)
 
 varianza_media = []
@@ -47,9 +47,9 @@ for i in varianza_media:
 masse = [25.07, 30.4, 40.1, 50.13, 70.09, 20.1]
 
 for i,k in zip(tau_medi,errore_tau):
-    print(f"{i/5} +- {k/5}")
+    print(f"{i/5} +- {np.round(k/5, 3)}")
 
-print(len(tau_medi), len(errore_tau))
+#print(len(tau_medi), len(errore_tau))
 """
 print(tau_medi)
 print(varianze)

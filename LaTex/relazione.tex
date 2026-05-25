@@ -407,16 +407,10 @@ Per ogni massa, la misura è stata ripetuta per 10 volte consecutive sia nella c
 \label{tab:dinamica_massa1}
 \end{minipage}
 \hfill
-\begin{minipage}[c]{0.50\textwidth}
-\centering
-% Quando avrai il grafico pronto, sostituisci il \framebox con:
-% \includegraphics[width=\textwidth]{nome_file_grafico1.png}
-\framebox{\begin{minipage}[c][5.5cm][c]{0.95\textwidth}
+\begin{minipage}[r]{0.70\textwidth}
     \centering
-    \itshape Spazio per Istogramma\\(Verifica Distribuzione Normale\\Massa 1)
-\end{minipage}}
-\captionof{figure}{Istogramma delle frequenze dei tempi per la Massa 1.}
-\label{fig:isto_massa1}
+    \includegraphics[width=0.8\textwidth]{Immagini/istogramma_dinamico_1.png}
+    \captionof{figure}{Istogramma delle 10 misure.}
 \end{minipage}
 
 \vspace{0.8cm} % Spazio verticale prima della massa successiva
@@ -447,15 +441,12 @@ Per ogni massa, la misura è stata ripetuta per 10 volte consecutive sia nella c
 \label{tab:dinamica_massa2}
 \end{minipage}
 \hfill
-\begin{minipage}[c]{0.50\textwidth}
-\centering
-\framebox{\begin{minipage}[c][5.5cm][c]{0.95\textwidth}
+\begin{minipage}[r]{0.70\textwidth}
     \centering
-    \itshape Spazio per Istogramma\\(Verifica Distribuzione Normale\\Massa 2)
-\end{minipage}}
-\captionof{figure}{Istogramma delle frequenze dei tempi per la Massa 2.}
-\label{fig:isto_massa2}
+    \includegraphics[width=0.8\textwidth]{Immagini/istogramma_dinamico_2.png}
+    \captionof{figure}{Istogramma delle 10 misure.}
 \end{minipage}
+
 
 \vspace{0.8cm}
 
@@ -485,14 +476,10 @@ Per ogni massa, la misura è stata ripetuta per 10 volte consecutive sia nella c
 \label{tab:dinamica_massa3}
 \end{minipage}
 \hfill
-\begin{minipage}[c]{0.50\textwidth}
-\centering
-\framebox{\begin{minipage}[c][5.5cm][c]{0.95\textwidth}
+\begin{minipage}[r]{0.70\textwidth}
     \centering
-    \itshape Spazio per Istogramma\\(Verifica Distribuzione Normale\\Massa 3)
-\end{minipage}}
-\captionof{figure}{Istogramma delle frequenze dei tempi per la Massa 3.}
-\label{fig:isto_massa3}
+    \includegraphics[width=0.8\textwidth]{Immagini/istogramma_dinamico_3.png}
+    \captionof{figure}{Istogramma delle 10 misure.}
 \end{minipage}
 
 \vspace{0.8cm}
@@ -523,14 +510,10 @@ Per ogni massa, la misura è stata ripetuta per 10 volte consecutive sia nella c
 \label{tab:dinamica_massa4}
 \end{minipage}
 \hfill
-\begin{minipage}[c]{0.50\textwidth}
-\centering
-\framebox{\begin{minipage}[c][5.5cm][c]{0.95\textwidth}
+\begin{minipage}[r]{0.70\textwidth}
     \centering
-    \itshape Spazio per Istogramma\\(Verifica Distribuzione Normale\\Massa 4)
-\end{minipage}}
-\captionof{figure}{Istogramma delle frequenze dei tempi per la Massa 4.}
-\label{fig:isto_massa4}
+    \includegraphics[width=0.8\textwidth]{Immagini/istogramma_dinamico_4.png}
+    \captionof{figure}{Istogramma delle 10 misure.}
 \end{minipage}
 
 \vspace{0.8cm}
@@ -561,24 +544,34 @@ Per ogni massa, la misura è stata ripetuta per 10 volte consecutive sia nella c
 \label{tab:dinamica_massa5}
 \end{minipage}
 \hfill
-\begin{minipage}[c]{0.50\textwidth}
-\centering
-\framebox{\begin{minipage}[c][5.5cm][c]{0.95\textwidth}
+\begin{minipage}[r]{0.70\textwidth}
     \centering
-    \itshape Spazio per Istogramma\\(Verifica Distribuzione Normale\\Massa 5)
-\end{minipage}}
-\captionof{figure}{Istogramma delle frequenze dei tempi per la Massa 5.}
-\label{fig:isto_massa5}
+    \includegraphics[width=0.8\textwidth]{Immagini/istogramma_dinamico_5.png}
+    \captionof{figure}{Istogramma delle 10 misure.}
 \end{minipage}
 
 \subsection{Analisi dati}
+\subsubsection{Metodo statico}
+\subsubsection*{Dipendenza di $l_i$ da $m_i$}
+Come inizio dell'analisi dei dati per il metodo statico si è verificata la seguente tramite metodo grafico:
+$$\Delta l \propto m$$
+Come si può evincere dalla teoria infatti:
+$$\Delta l = \frac{g}{k} m$$
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Immagini/Statico_lvsm.png}
+    \caption{Proporzionalità diretta tra $l_i$ e $m_i$}
+\end{figure}
+Gli errori sul grafico sono solamente quelli di misura delle lunghezze e masse, non risultano visibili con la scala scelta.
+
 \subsubsection*{Misura di k, metodo statico}
 Come si vede dalla teoria (!!!... non so se è inserito!!!) nel metodo statico k risulta essere:
 $$k_i = \frac{m_ig}{l_i-l_s}$$
 con errore:
 $$\Delta k_i = k_i(\frac{\Delta m_i}{m_i} + 2\frac{\Delta l}{l_i-l_s})$$
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{Dati sperimentali raccolti per la determinazione della costante elastica $k$. La lunghezza a riposo della molla è $l_s = 32.4\,\text{cm}$ .}
 \label{tab:dati_molla}
@@ -600,7 +593,47 @@ Lo stesso ragionamento può essere fatto con la massa.
 L'approccio scelto è forzato dal fatto che le misure non sono indipendenti, infatti $l_s$ è stata misurata una sola volta all'inizio dell'esperienza.
 
 $$k = (1.491 \pm 0.005)\,\text{N/m}$$
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Immagini/Statico_kvsm.png}
+    \caption{Grafico di compatibilità dei $k_i$}
+\end{figure}
+%%%%fine metodo statico dioproco%%%%
 
+\subsubsection{Metodo dinamico}
+\subsubsection*{Calcolo senza usare un modello}
+
+Calcoliamo i valori dei periodi medi $\bar{T_i}$ per ogni $m_i$ associato con il rispettivo errore $\sigma_{\bar{T_i}}$.
+Calcoliamo anche i valori $\bar{T_{0}}$ corrispondenti ai periodi medi a piattino scarico, ogni set di masse ha il suo in modo che siano indipendenti.
+
+Il valore di k quindi risulta:
+$$k_i = 4\pi^2\frac{m_i}{\overline{T}_i^2 - \overline{T}_{0,i}^2}$$
+Con errore associato $\sigma_{k_i}$ ignorando i contributi delle masse:
+\begin{equation*}
+    \sigma_{k_i} \approx 2 k_i \cdot \frac{\sqrt{\overline{T}_i^2 \sigma_{\overline{T}_i}^2 + \overline{T}_{0,i}^2 \sigma_{\overline{T}_{0,i}}^2}}{\overline{T}_i^2 - \overline{T}_{0,i}^2}
+\end{equation*}
+
+
+
+
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{cccccccc}
+        \hline
+        $m_i$ [g] & $\bar{T}_i$ [s] & $T_{0,i}$ [s] & $k_i$ [N/m] & $\sigma_{T_i}$ & $\sigma_{T_0,i}$& $\sigma_{k_i}$ \\
+        \hline
+        4.97  & 0.9866 & 0.8904 & 1.087 & 0.005 & 0.004 & 0.07\\
+        10.30 & 1.0354 & 0.885  & 1.408 & 0.005 & 0.002 & 0.05\\
+        20.00 & 1.1708 & 0.8874 & 1.354 & 0.006 & 0.003 & 0.03\\
+        30.03 & 1.2672 & 0.8836 & 1.437 & 0.004 & 0.002 & 0.02\\
+        49.99 & 1.4594 & 0.8796 & 1.455 & 0.002 & 0.003 & 0.01\\
+        \hline
+    \end{tabular}
+\end{table}
+
+$k$ è quindi stato calcolato con una media pesata dagli errori $\sigma_{k_i}$:
+$$k = (1.443 \pm 0.007) \text{ N/m}$$
 
 
 
