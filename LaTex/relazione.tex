@@ -16,7 +16,7 @@
 \usepackage{parskip}
 
 \title{Misura della costante elastica di una molla elicoidale}
-\author{Eddi Bressan}
+\author{Eddi Bressan, Davide Conforte}
 \date{\today}
 
 \begin{document}
@@ -36,7 +36,6 @@ vengono meno le forze che l'hanno causata.
 
 Questo comportamento si mantiene se le forze applicate sono inferiori
 ad un limite dipendente da vari fattori: materiale, temperatura, tipo di deformazione considerata, etc.
-Tale deformazione può essere definita \textbf{elastica} se le forze applicate s
 
 Nelle deformazioni elastiche si osserva una relazione di proporzionalità tra sollecitazione e deformazione:
 $$
@@ -77,7 +76,7 @@ Usando diverse masse e misurando i rispettivi $\Delta l$ si ottengono diverse mi
 $$
 k_i = \frac{m_i g}{\Delta l_i}
 $$
-Nel configurazione reale, alla molla è appeso un piattello (di massa $m_p$).
+Nella configurazione reale, alla molla è appeso un piattello (di massa $m_p$).
 Inoltre, possedendo una massa propria, la molla è soggetta alla forza di gravità e subisce pertanto un allungamento iniziale $l_s$ anche a piattello scarico.
 
 Misurando la differenza tra l'allungamento a piatto scarico:
@@ -140,18 +139,18 @@ $$
     x(t=0)=x_0
 \end{cases}
 $$
-Abbiamo quindi:
+Si ha quindi:
 $$
 \begin{cases}
     \dot{x} = A \omega \cos(\omega t + \phi) = 0 \\
     \ddot{x} = -A \omega^2 \sin(\omega t + \phi)
 \end{cases}
 $$
-Da cui ricaviamo:
+Da cui si ricava:
 $$
 -A \omega^2 \sin(\omega t + \phi) + \frac{k}{m} A \sin(\omega t + \phi) + \frac{k}{m}[l_{eq} - l_0] = g
 $$
-Dobbiamo perciò avere:
+È perciò necessario che valga:
 $$
 \omega = \sqrt{\frac{k}{m}}
 $$
@@ -161,7 +160,7 @@ La condizione iniziale $\dot{x}(t=0)=0$ fornisce:
 $$
 \cos(\phi) = 0 \quad \text{o} \quad \phi = \frac{\pi}{2} 
 $$
-Mentre applicando la condizione $x(t=0)=x_0$ otteniamo:
+Mentre, applicando la condizione $x(t=0)=x_0$, si ottiene:
 $$
 x_0 = A + l_{eq} - l_0
 $$
@@ -173,19 +172,19 @@ Per una soluzione completa data da:
 $$
 x(t) = [x_0 - (l_{eq} - l_0)]\sin(\sqrt{\frac{k}{m}}t+\frac{\pi}{2}) + (l_{eq} - l_0) 
 $$
-Il fatto che $\omega = \sqrt{\frac{k}{m}}$ ci permette di calcolare la costante elastica della molla dalla
+Il fatto che $\omega = \sqrt{\frac{k}{m}}$ permette di calcolare la costante elastica della molla dalla
 misura del periodo di oscillazione:
 $$
 T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{m}{k}}
 $$
-Ma in questo caso la massa è tutta la massa appesa alla molla, inclusa la massa del supporto.
+In questo caso, è necessario considerare la massa totale sospesa, inclusa quella del supporto.
 
 \subsection{Massa efficace dinamica}
 Nella misura tramite metodo dinamico non si può trascurare la massa della molla in relazione alla stima del
 periodo di oscillazione.
 Si dovrà valutare il contributo di $m_m$ anche in questo caso come $m_{eff.dinamica}$
 
-Calcoliamo la variazione dell'energia cinetica $dK$ della molla a causa della stessa massa $dm$ di un 
+Si calcoli la variazione dell'energia cinetica $dK$ della molla a causa della stessa massa $dm$ di un 
 elemento di lunghezza $dx$ che si muove con una velocità istantanea $v$ durante il moto armonico della molla:
 $$
 dK = \frac{1}{2}dmv^2
@@ -195,7 +194,7 @@ $l$ della molla V da:
 $$
 v = \frac{x}{l}V
 $$
-Si può quindi scrivere:Possiamo quindi
+Si può quindi scrivere:
 $$
 dK = \frac{1}{2}(\frac{x}{l}V)^2 \frac{m_m}{l}dx
 $$
@@ -207,7 +206,7 @@ Ovvero:
 $$
 K = \frac{1}{2}(\frac{V}{l})^2 \frac{m_m}{l} \frac{l^3}{3} = \frac{1}{2}V^2 \frac{m_m}{3}
 $$
-Sommando anche la massa appesa alla molla (anch'essa in movimento con velocità $V$) abbiamo un'energia
+Sommando anche la massa appesa alla molla (anch'essa in movimento con velocità $V$) si ottiene un'energia
 cinetica totale:
 $$
 K = \frac{1}{2}V^2 (m+\frac{m_m}{3})
@@ -234,7 +233,7 @@ Seguendo questo approccio risulta necessario prendere un set di misure a piatto 
 \subsection{Metodo dinamico con attriti}
 Nel caso in cui non si possano trascurare gli attriti, è necessario inserire un termine proporzionale al
 $dx/dt$ che dipenderà dalla viscosità del mezzo (e da eventuali attriti meccanici nella molla stessa).
-Si consideri per semplicità l'equazione omogenea (abbiamo visto la soluzione della non omogenea):
+Si consideri per semplicità l'equazione omogenea (la cui soluzione particolare è già stata discussa):
 $$
 m\ddot{x} + C\dot{x} + kx = 0
 $$
@@ -308,10 +307,6 @@ $$
     \item Misura della lunghezza della molla a riposo $l_0$.
 \end{itemize}
 
- 
-%per favore scrivi meglio la sintassi coi doppi dollari è terribile...       :(
-
-
 \subsection{Set-up dell'apparato}     
 \subsubsection{Misura tramite metodo statico}
 \begin{itemize}
@@ -329,9 +324,9 @@ $$
 \begin{itemize}
     \item \textbf{Selezione e configurazione delle masse:} Sono state selezionate 5 differenti masse per studiare la dipendenza del periodo di oscillazione $T$ in funzione della massa totale sospesa.
     
-    \item \textbf{Misura del tempo cumulativo:} Per ciascuna massa, dopo aver impresso un piccolo spostamento verticale rispetto alla posizione di equilibrio, il sistema è stato lasciato oscillare liberamente. Al fine di minimizzare l'incertezza associata al tempo di reazione dell'operatore nell'attivazione e nell'arresto del cronometro, non è stato misurato il singolo periodo ma 5.
+    \item \textbf{Misura del tempo cumulativo:} Per ciascuna massa, dopo aver impresso un piccolo spostamento verticale rispetto alla posizione di equilibrio, il sistema è stato lasciato oscillare liberamente. Al fine di minimizzare l'incertezza associata al tempo di reazione dell'operatore nell'attivazione e nell'arresto del cronometro, non è stato misurato un singolo periodo, bensì un intervallo comprendente 5 oscillazioni complete.
     
-    \item \textbf{Reiterazione e struttura dei set di dati:} Per ognuna delle 5 configurazioni a masse diverse la misura di $\tau = 5T$ è stata ripetuta 10 volte
+    \item \textbf{Reiterazione e struttura dei set di dati:} Per ognuna delle 5 configurazioni a masse diverse la misura di $\tau = 5T$ è stata ripetuta 10 volte.
     
     \item \textbf{Misure indipendenti a piattello scarico:} In corrispondenza di ciascuna delle sessioni di misura relative alle 5 masse, è stato acquisito un set indipendente di misure considerando il solo piattello scarico. Questa operazione di calibrazione locale è cruciale per la successiva elaborazione dati.
 \end{itemize}
@@ -577,7 +572,7 @@ Le incertezze associate alle misure di lunghezza e massa sono trascurabili rispe
 adottata nel grafico e pertanto non sono visibili.
 
 \subsubsection*{Misura di k, metodo statico}
-Come si vede dalla teoria (!!!... non so se è inserito!!!) nel metodo statico k risulta essere:
+Secondo il modello teorico delineato per il metodo statico, k risulta essere:
 $$k_i = \frac{m_ig}{l_i-l_s}$$
 con errore:
 $$\Delta k_i = k_i(\frac{\Delta m_i}{m_i} + 2\frac{\Delta l}{l_i-l_s})$$
@@ -599,23 +594,23 @@ $k_i$ (N/m) & $\Delta k_i$ (N/m) \\
 \end{tabular}
 \end{table}
 
-Il valore scelto è l'ultimo, quello che corrisponde ad un allungamento più grande, infatti al crescere di $(l_i - l_s)$ il suo termine nella propagazione degli errori diventa più piccolo.
-Lo stesso ragionamento può essere fatto con la massa.
-L'approccio scelto è forzato dal fatto che le misure non sono indipendenti, infatti $l_s$ è stata misurata una sola volta all'inizio dell'esperienza.
+Come stima per $k$ è stato adottato l'ultimo valore, corrispondente all'allungamento massimo.
+Infatti, all'aumentare di ($l_i - l_s$), si minimizza l'impatto di tale termine nella propagazione degli errori.
 
+Il medesimo ragionamento si applica alla massa. L'approccio adottato è vincolato dalla mancanza di indipendenza delle misure, in quanto $l_s$ è stata misurata una sola volta all'inizio dell'esperienza.
 $$k = (1.491 \pm 0.005)\,\text{N/m}$$
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{Immagini/Statico_kvsm.png}
     \caption{Grafico di compatibilità dei $k_i$}
 \end{figure}
-%%%%fine metodo statico dioproco%%%%
+%%%%fine metodo statico%%%%
 
 \subsubsection{Metodo dinamico}
 \subsubsection*{Calcolo senza usare un modello}
 
-Calcoliamo i valori dei periodi medi $\bar{T_i}$ per ogni $m_i$ associato con il rispettivo errore $\sigma_{\bar{T_i}}$.
-Calcoliamo anche i valori $\bar{T_{0}}$ corrispondenti ai periodi medi a piattino scarico, ogni set di masse ha il suo in modo che siano indipendenti.
+Sono stati calcolati i valori dei periodi medi $\bar{T_i}$ per ogni $m_i$ associato con il rispettivo errore $\sigma_{\bar{T_i}}$.
+Sono stati valutati anche i valori $\bar{T_{0}}$ corrispondenti ai periodi medi a piattino scarico; ogni set di masse possiede il proprio valore di riferimento al fine di garantire l'indipendenza delle misure.
 
 Il valore di k quindi risulta:
 $$k_i = 4\pi^2\frac{m_i}{\overline{T}_i^2 - \overline{T}_{0,i}^2}$$
@@ -643,7 +638,7 @@ Con errore associato $\sigma_{k_i}$ ignorando i contributi delle masse:
     \end{tabular}
 \end{table}
 
-$k$ è quindi stato calcolato con una media pesata dagli errori $\sigma_{k_i}$:
+Il valore finale di $k$ è stato calcolato mediante una media pesata sulle incertezze $\sigma_{k_i}$:
 $$k = (1.443 \pm 0.007) \text{ N/m}$$
 
 \begin{figure}[H]
@@ -652,12 +647,12 @@ $$k = (1.443 \pm 0.007) \text{ N/m}$$
     \caption{Grafico di compatibilità dei $k_i$ senza l'utilizzo del modello della massa efficace.}
 \end{figure}
 \subsubsection*{Calcolo con modello della massa efficace}
-Utilizzando gli stessi valori per i periodi del modello precedente abbiamo calcolato la costante 
+Utilizzando gli stessi valori per i periodi del modello precedente è stata calcolata la costante 
 utilizzando il modello della massa efficace con la seguente:
 $$k_i = 4\pi^2 \frac{M_{tot}}{T_i^2} \quad,\quad  M_{tot} = \frac{m_m}{3}+m_p+m_i$$
 Per quanto riguarda il $\sigma_{k_i}$ invece:
-$$\sigma_k^2 = k^2\left[\left(\frac{\sigma_{M_tot}}{M_{tot}}\right)^2+4\left(\frac{\sigma_{T_i}}{T_i}\right)^2\right]$$
-E $\sigma_{M_{tot}}:$
+$$\sigma_k^2 = k^2\left[\left(\frac{\sigma_{M_{tot}}}{M_{tot}}\right)^2+4\left(\frac{\sigma_{T_i}}{T_i}\right)^2\right]$$
+Mentre l'incertezza $\sigma_{M_{tot}}$ è data da:
 $$\sigma_{M_{\text{tot}}} = \sqrt{\left(\frac{\sigma_{m_m}}{3}\right)^2 + \sigma_{m_p}^2 + \sigma_{m_i}^2} = \sqrt{\frac{19}{9}} \cdot \sigma_m $$
 
 \begin{table}[htbp]

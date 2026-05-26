@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.25)  26 MAY 2026 12:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.25)  26 MAY 2026 12:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -316,77 +316,77 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [8]
-Overfull \hbox (6.7541pt too wide) in paragraph at lines 380--394
+Overfull \hbox (6.7541pt too wide) in paragraph at lines 375--389
  [][] 
  []
 
 <Immagini/istogramma_dinamico_1.png, id=42, 607.26875pt x 341.275pt>
 File: Immagini/istogramma_dinamico_1.png Graphic file (type png)
 <use Immagini/istogramma_dinamico_1.png>
-Package pdftex.def Info: Immagini/istogramma_dinamico_1.png  used on input line 400.
+Package pdftex.def Info: Immagini/istogramma_dinamico_1.png  used on input line 395.
 (pdftex.def)             Requested size: 254.93655pt x 143.26682pt.
 
-Overfull \hbox (70.89491pt too wide) in paragraph at lines 376--403
+Overfull \hbox (70.89491pt too wide) in paragraph at lines 371--398
 $[]$  $[]$ 
  []
 
 
-Overfull \hbox (6.7541pt too wide) in paragraph at lines 414--428
+Overfull \hbox (6.7541pt too wide) in paragraph at lines 409--423
  [][] 
  []
 
 <Immagini/istogramma_dinamico_2.png, id=44, 607.26875pt x 341.275pt>
 File: Immagini/istogramma_dinamico_2.png Graphic file (type png)
 <use Immagini/istogramma_dinamico_2.png>
-Package pdftex.def Info: Immagini/istogramma_dinamico_2.png  used on input line 434.
+Package pdftex.def Info: Immagini/istogramma_dinamico_2.png  used on input line 429.
 (pdftex.def)             Requested size: 254.93655pt x 143.26682pt.
 
-Overfull \hbox (70.89491pt too wide) in paragraph at lines 410--437
+Overfull \hbox (70.89491pt too wide) in paragraph at lines 405--432
 $[]$  $[]$ 
  []
 
 
-Overfull \hbox (6.7541pt too wide) in paragraph at lines 449--463
+Overfull \hbox (6.7541pt too wide) in paragraph at lines 444--458
  [][] 
  []
 
 <Immagini/istogramma_dinamico_3.png, id=45, 607.26875pt x 341.275pt>
 File: Immagini/istogramma_dinamico_3.png Graphic file (type png)
 <use Immagini/istogramma_dinamico_3.png>
-Package pdftex.def Info: Immagini/istogramma_dinamico_3.png  used on input line 469.
+Package pdftex.def Info: Immagini/istogramma_dinamico_3.png  used on input line 464.
 (pdftex.def)             Requested size: 254.93655pt x 143.26682pt.
 
-Overfull \hbox (70.89491pt too wide) in paragraph at lines 445--472
+Overfull \hbox (70.89491pt too wide) in paragraph at lines 440--467
 $[]$  $[]$ 
  []
 
 [9 <./Immagini/istogramma_dinamico_1.png> <./Immagini/istogramma_dinamico_2.png>]
-Overfull \hbox (6.7541pt too wide) in paragraph at lines 483--497
+Overfull \hbox (6.7541pt too wide) in paragraph at lines 478--492
  [][] 
  []
 
 <Immagini/istogramma_dinamico_4.png, id=51, 607.26875pt x 341.275pt>
 File: Immagini/istogramma_dinamico_4.png Graphic file (type png)
 <use Immagini/istogramma_dinamico_4.png>
-Package pdftex.def Info: Immagini/istogramma_dinamico_4.png  used on input line 503.
+Package pdftex.def Info: Immagini/istogramma_dinamico_4.png  used on input line 498.
 (pdftex.def)             Requested size: 254.93655pt x 143.26682pt.
 
-Overfull \hbox (70.89491pt too wide) in paragraph at lines 479--506
+Overfull \hbox (70.89491pt too wide) in paragraph at lines 474--501
 $[]$  $[]$ 
  []
 
 
-Overfull \hbox (6.7541pt too wide) in paragraph at lines 517--531
+Overfull \hbox (6.7541pt too wide) in paragraph at lines 512--526
  [][] 
  []
 
 <Immagini/istogramma_dinamico_5.png, id=52, 607.26875pt x 341.275pt>
 File: Immagini/istogramma_dinamico_5.png Graphic file (type png)
 <use Immagini/istogramma_dinamico_5.png>
-Package pdftex.def Info: Immagini/istogramma_dinamico_5.png  used on input line 537.
+Package pdftex.def Info: Immagini/istogramma_dinamico_5.png  used on input line 532.
 (pdftex.def)             Requested size: 254.93655pt x 143.26682pt.
 
-Overfull \hbox (70.89491pt too wide) in paragraph at lines 513--540
+Overfull \hbox (70.89491pt too wide) in paragraph at lines 508--535
 $[]$  $[]$ 
  []
 
@@ -394,37 +394,37 @@ $[]$  $[]$
 <Immagini/Statico_lvsm.png, id=58, 699.61375pt x 384.43625pt>
 File: Immagini/Statico_lvsm.png Graphic file (type png)
 <use Immagini/Statico_lvsm.png>
-Package pdftex.def Info: Immagini/Statico_lvsm.png  used on input line 573.
+Package pdftex.def Info: Immagini/Statico_lvsm.png  used on input line 568.
 (pdftex.def)             Requested size: 364.19667pt x 200.12503pt.
  [11 <./Immagini/istogramma_dinamico_5.png>]
 <Immagini/Statico_kvsm.png, id=63, 704.6325pt x 396.48125pt>
 File: Immagini/Statico_kvsm.png Graphic file (type png)
 <use Immagini/Statico_kvsm.png>
-Package pdftex.def Info: Immagini/Statico_kvsm.png  used on input line 609.
+Package pdftex.def Info: Immagini/Statico_kvsm.png  used on input line 604.
 (pdftex.def)             Requested size: 364.19667pt x 204.92517pt.
  [12 <./Immagini/Statico_lvsm.png>]
 <Immagini/Compatibilita_nmodello_dinamico.png, id=68, 607.26875pt x 341.275pt>
 File: Immagini/Compatibilita_nmodello_dinamico.png Graphic file (type png)
 <use Immagini/Compatibilita_nmodello_dinamico.png>
-Package pdftex.def Info: Immagini/Compatibilita_nmodello_dinamico.png  used on input line 651.
+Package pdftex.def Info: Immagini/Compatibilita_nmodello_dinamico.png  used on input line 646.
 (pdftex.def)             Requested size: 364.19667pt x 204.67804pt.
  [13 <./Immagini/Statico_kvsm.png>]
 <Immagini/Compatibilita_modello_dinamico.png, id=75, 608.2725pt x 341.275pt>
 File: Immagini/Compatibilita_modello_dinamico.png Graphic file (type png)
 <use Immagini/Compatibilita_modello_dinamico.png>
-Package pdftex.def Info: Immagini/Compatibilita_modello_dinamico.png  used on input line 682.
+Package pdftex.def Info: Immagini/Compatibilita_modello_dinamico.png  used on input line 677.
 (pdftex.def)             Requested size: 364.19667pt x 204.33955pt.
  [14 <./Immagini/Compatibilita_nmodello_dinamico.png>]
 <Immagini/Costanza_gamma.png, id=80, 607.26875pt x 341.275pt>
 File: Immagini/Costanza_gamma.png Graphic file (type png)
 <use Immagini/Costanza_gamma.png>
-Package pdftex.def Info: Immagini/Costanza_gamma.png  used on input line 701.
+Package pdftex.def Info: Immagini/Costanza_gamma.png  used on input line 696.
 (pdftex.def)             Requested size: 364.19667pt x 204.67804pt.
  [15 <./Immagini/Compatibilita_modello_dinamico.png>]
 <Immagini/Regressione_lambda.png, id=86, 607.26875pt x 341.275pt>
 File: Immagini/Regressione_lambda.png Graphic file (type png)
 <use Immagini/Regressione_lambda.png>
-Package pdftex.def Info: Immagini/Regressione_lambda.png  used on input line 716.
+Package pdftex.def Info: Immagini/Regressione_lambda.png  used on input line 711.
 (pdftex.def)             Requested size: 364.19667pt x 204.67804pt.
  [16 <./Immagini/Costanza_gamma.png> <./Immagini/Regressione_lambda.png>] [17] (./relazione.aux)
  ***********
@@ -433,15 +433,15 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7269 strings out of 474222
- 117173 string characters out of 5748733
+ 7270 strings out of 474222
+ 117182 string characters out of 5748733
  1937975 words of memory out of 5000000
- 29442 multiletter control sequences out of 15000+600000
+ 29443 multiletter control sequences out of 15000+600000
  569978 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,11n,93p,557b,378s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on relazione.pdf (17 pages, 352281 bytes).
+Output written on relazione.pdf (17 pages, 352486 bytes).
 PDF statistics:
  163 PDF objects out of 1000 (max. 8388607)
  89 compressed objects within 1 object stream
