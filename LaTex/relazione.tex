@@ -26,17 +26,17 @@
 \newpage
 
 \section{Obiettivo dell'esperienza}
-Lo scopo dell'esperienza è lo studio della deformazione di una molla elicoidale tramite 2 metodi: statico e dinamico.
+Lo scopo dell'esperienza è lo studio della deformazione di una molla elicoidale tramite due metodi: statico e dinamico.
 
 \section{Cenni teorici}
 
 \subsection{Deformazione elastica}
 Una deformazione è detta \textbf{elastica} se il corpo torna allo stato originario quando
-vengono meno le forze che ne hanno causato la deformazione.
+vengono meno le forze che l'hanno causata.
 
-Tale deformazione può essere definita \textbf{elastica} se le forze applicate sono inferiori
+Questo comportamento si mantiene se le forze applicate sono inferiori
 ad un limite dipendente da vari fattori: materiale, temperatura, tipo di deformazione considerata, etc.
-Oltre questo limite le deformazioni divengono anaelastiche, ovvero permanenti.
+Tale deformazione può essere definita \textbf{elastica} se le forze applicate s
 
 Nelle deformazioni elastiche si osserva una relazione di proporzionalità tra sollecitazione e deformazione:
 $$
@@ -56,7 +56,7 @@ Il modulo della forza di richiamo è proporzionale alla deformazione (legge di H
 $$
 \vec{F} = -k \vec{x}
 $$
-Dove $\vec{x}$ è la deformazione della molla rispetto la sua lunghezza normale $\vec{x} = (l - l_{0})\hat{x}$
+Dove $\vec{x}$ è la deformazione della molla rispetto la sua lunghezza a riposo $\vec{x} = (l - l_{0})\hat{x}$
 con $l_0$ la lunghezza della molla a riposo.
 
 La costante di proporzionalità $k$ è detta \textbf{costante elastica} della molla e 
@@ -73,13 +73,12 @@ nel seguente modo:
 $$
 mg = k {\Delta l} = k (l-l_0)
 $$
-Usando diverse masse e misurando i rispettivi $\Delta l$ ottengo diverse misure di k:
+Usando diverse masse e misurando i rispettivi $\Delta l$ si ottengono diverse misure di k:
 $$
 k_i = \frac{m_i g}{\Delta l_i}
 $$
-Nel caso reale alla molla è già appeso un piattello (di massa $m_p$),
-inoltre la molla ha una sua massa ed è quindi anch'essa soggetta alla forza peso.
-Subisce già un allungamento $l_s$ anche a piattello scarico.
+Nel configurazione reale, alla molla è appeso un piattello (di massa $m_p$).
+Inoltre, possedendo una massa propria, la molla è soggetta alla forza di gravità e subisce pertanto un allungamento iniziale $l_s$ anche a piattello scarico.
 
 Misurando la differenza tra l'allungamento a piatto scarico:
 $$
@@ -89,7 +88,7 @@ e l'allungamento in seguito all'aggiunta di una massa $m_i$:
 $$
 (m_i + m_p + m_{eff.statica})g = k(l_i - l_0)
 $$
-e facendo la differenza membro a membro tra le due operazioni otteniamo:
+e sottraendo membro a membro le due equazioni si ottiene:
 $$
 m_i g = k_i (l_i - l_s)
 $$
@@ -97,7 +96,7 @@ Da cui il valore della costante elastica della molla:
 $$
 k_i = \frac{m_i g}{(l_i - l_s)}
 $$
-Gli errori sono tutti di sensibilità per cui possiamo scrivere:
+Le incertezze sono interamente dovute alla sensibilità strumentale, pertanto si può scrivere:
 $$
 \frac{\Delta k_i}{k_i} = \frac{\Delta m_i}{m_i}+2\frac{\Delta l}{(l_i - l_s)}
 $$
@@ -107,8 +106,8 @@ Partendo dalla legge di Hooke:
 $$
 mg = k \Delta l = k(l_{eq} - l_0)
 $$
-Se applicando una forza alla massa appesa alla molla sposto la molla dalla sua posizione di equilibrio e la lascio
-andare, questa si metterà ad oscillare rispetto la posizione di equilibrio $l_{eq}$ con equazione:
+Se applicando una forza, si sposta la massa dalla sua posizione di equilibrio e la si rilascia,
+il sistema inizierà ad oscillare attorno alla posizione di equilibrio $l_{0}$ con equazione:
 $$
 m\ddot{x} + kx = mg
 $$
@@ -181,35 +180,10 @@ T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{m}{k}}
 $$
 Ma in questo caso la massa è tutta la massa appesa alla molla, inclusa la massa del supporto.
 
-\subsection{Massa efficace statica}
-Per calcolare la $m{eff.statica}$ immaginiamo di dividere la molla in N parti uguale lunghezza.
-La lunghezza di tali sezioni sarà $a = l_0 / N$ e la massa pari a $\mu = m_m / N$.
-La costante elastica della molla completa è k, quindi, considerando tale molla come una serie di N molle,
-la costante elastica k di ognuna di queste parti della molla sarà data da:
-$$
-k = \frac{1}{\sum\frac{1}{k}} = \frac{k}{N}
-$$
-Il primo elemento della molla sentirà il peso di tutte le N-1 molle e si allungherà di:
-$$
-\Delta x_1 = \frac{(N-1)\mu g}{k} 
-$$
-La seconda sentirà il peso delle N-2 molle e si allungherà di:
-$$
-\Delta x_2 = \frac{(N-2)\mu g}{k} 
-$$
-L'allungamento totale sarà dato dalla somma di tutti gli allungamenti:
-$$
-\Delta x = \sum_{i=1}^{N-1} \Delta x_i = \sum_{i=1}^{N-1} \frac{(N-i)\mu g}{k} \implies \Delta x = \frac{m_m g}{2} \frac{1}{k}
-$$
-Ovvero la molla si è allungata come se fosse stata appesa una massa:
-$$
-m_{eff.statica} = \frac{m_m}{2}
-$$
-
 \subsection{Massa efficace dinamica}
-Nella misura tramite metodo dinamico non possiamo trascurare la massa della molla in relazione alla stima del
+Nella misura tramite metodo dinamico non si può trascurare la massa della molla in relazione alla stima del
 periodo di oscillazione.
-Dovremo valutare il contributo di $m_m$ anche in questo caso come $m_{eff.dinamica}$
+Si dovrà valutare il contributo di $m_m$ anche in questo caso come $m_{eff.dinamica}$
 
 Calcoliamo la variazione dell'energia cinetica $dK$ della molla a causa della stessa massa $dm$ di un 
 elemento di lunghezza $dx$ che si muove con una velocità istantanea $v$ durante il moto armonico della molla:
@@ -221,7 +195,7 @@ $l$ della molla V da:
 $$
 v = \frac{x}{l}V
 $$
-Possiamo quindi scrivere:
+Si può quindi scrivere:Possiamo quindi
 $$
 dK = \frac{1}{2}(\frac{x}{l}V)^2 \frac{m_m}{l}dx
 $$
@@ -229,7 +203,7 @@ L'energia cinetica totale della molla in oscillazione si ottiene integrando da 0
 $$
 K = \frac{1}{2}(\frac{V}{l})^2 \frac{m_m}{l} \int_{0}^{l} x^2 dx
 $$
-Che vale:
+Ovvero:
 $$
 K = \frac{1}{2}(\frac{V}{l})^2 \frac{m_m}{l} \frac{l^3}{3} = \frac{1}{2}V^2 \frac{m_m}{3}
 $$
@@ -238,15 +212,29 @@ cinetica totale:
 $$
 K = \frac{1}{2}V^2 (m+\frac{m_m}{3})
 $$
-Abbiamo quindi che la massa effettiva della molla da sommare alla massa appesa è nel caso dinamico pari a:
+Pertanto, la massa efficace della molla da sommare alla massa appesa è, nel caso dinamico,
+pari a:
+
 $$
 m_{eff.dinamica} = \frac{m_m}{3}
 $$
+\subsection{I due modelli utilizzati}
+Si può evitare di utilizzare il modello della massa efficace in questo modo:
+\begin{equation*}
+    T_i^2 = 4\pi^2 \frac{\frac{m_m}{3} + m_p + m_i}{k} \quad \text{e} \quad T_{0,i}^2 = 4\pi^2 \frac{\frac{m_m}{3} + m_p}{k}
+\end{equation*}
+dove $T_{0,i}$ è il periodo di oscillazione a piatto scarico.
+\begin{equation*}
+    T_i^2 - T_{0,i}^2 = 4\pi^2 \frac{m_i}{k}
+\end{equation*}
+Seguendo questo approccio risulta necessario prendere un set di misure a piatto scarico per ogni massa $m_i$ in modo che i valori calcolati siano indipendenti.
+
+
 
 \subsection{Metodo dinamico con attriti}
-Nel caso in cui non si possano trascurare gli attriti, dobbiamo inserire un termine proporzionale al
-$dx/dt$ che dipenderà daòòa viscosità del mezzo (e da eventuali attriti meccanici nella molla stessa).
-Consideriamo per semplicità l'equazione omogenea (abbiamo visto la soluzione della non omogenea):
+Nel caso in cui non si possano trascurare gli attriti, è necessario inserire un termine proporzionale al
+$dx/dt$ che dipenderà dalla viscosità del mezzo (e da eventuali attriti meccanici nella molla stessa).
+Si consideri per semplicità l'equazione omogenea (abbiamo visto la soluzione della non omogenea):
 $$
 m\ddot{x} + C\dot{x} + kx = 0
 $$
@@ -268,12 +256,12 @@ $$
 $$
 Che è un'equazione differenziale lineare di secondo ordine a coefficienti costanti.
 
-Dalla teoria delle equazioni differenziali ricavo il moto descritto dalla legge:
+Dalla teoria delle equazioni differenziali si ricava la legge oraria del moto:
 $$
 x(t) = A e^{\gamma t} \cos(\sqrt{\omega_0^2 - \gamma^2 t} + \phi) \quad \text{per} \quad \gamma < \omega_0
 $$
-Ottengo quindi un moto oscillatorio smorzato, con A e $\phi$ che dipendono dalle condizioni iniziali.
-Notiamo che la pulsazione misurata è influenzata dall'attrito:
+Si ottiene quindi un moto oscillatorio smorzato, con A e $\phi$ che dipendono dalle condizioni iniziali.
+Si nota che la pulsazione misurata è influenzata dall'attrito:
 $$
 \omega_0 \to \omega_0 - \frac{C}{2m}
 $$
@@ -331,7 +319,7 @@ $$
     
     \item \textbf{Misura a piattello scarico ($l_s$):} Si è proceduto ad agganciare il piattello porta-masse vuoto all'estremità inferiore del sistema. Una volta raggiunto l'equilibrio statico, è stata misurata la nuova lunghezza della molla $l_s$
     
-    \item \textbf{Applicazione incrementale dei carichi:} Sull'apposito piattello sono state posizionate, in successione e una alla volta, le masse campionate a disposizione .
+    \item \textbf{Applicazione incrementale dei carichi:} Sull'apposito piattello sono state posizionate, in successione e una alla volta, le masse campionate a disposizione.
     
     \item \textbf{Rilevazione delle lunghezze in equilibrio:} Raggiunta la condizione stazionaria di equilibrio meccanico (in cui la forza elastica della molla bilancia esattamente la forza peso totale), si è effettuata la lettura della lunghezza finale.
     
@@ -549,13 +537,35 @@ Per ogni massa, la misura è stata ripetuta per 10 volte consecutive sia nella c
     \includegraphics[width=0.8\textwidth]{Immagini/istogramma_dinamico_5.png}
     \captionof{figure}{Istogramma delle 10 misure.}
 \end{minipage}
+\subsection{Raccolta dati per il decadimento dell'ampiezza}
 
-\subsection{Analisi dati}
+Il fenomeno di smorzamento generato dalle forze dissipative è stato studiato analizzando l'evoluzione temporale delle ampiezze massime $A_i$ dell'oscillatore. Le misure sono state raccolte a intervalli regolari di $\Delta t = 15\text{ s}$ per una durata complessiva di $90\text{ s}$.
+
+\begin{table}[htbp]
+\centering
+\caption{Valori sperimentali delle ampiezze massime $A_i$ registrate a intervalli di $15\text{ s}$ e relativi rapporti adimensionali $A_i/A_0$.}
+\label{tab:ampiezze}
+\begin{tabular}{ccc}
+\hline
+$t_i$ (s) & $A_i$ (cm) & $A_i/A_0$ \\ \hline
+15        & 22.7       & 1.247     \\
+30        & 22.2       & 1.220     \\
+45        & 21.8       & 1.198     \\
+60        & 21.5       & 1.181     \\
+75        & 21.2       & 1.165     \\
+90        & 20.8       & 1.143     \\ \hline
+\end{tabular}
+\end{table}
+
+
+\section{Analisi dati}
+\subsection{Stima di k}
 \subsubsection{Metodo statico}
 \subsubsection*{Dipendenza di $l_i$ da $m_i$}
-Come inizio dell'analisi dei dati per il metodo statico si è verificata la seguente tramite metodo grafico:
+L'analisi dei dati per il metodo statico ha previsto inizialmente la verifica della seguente
+relazione tramite metodo grafico:
 $$\Delta l \propto m$$
-Come si può evincere dalla teoria infatti:
+Come previsto dal modello teorico, infatti:
 $$\Delta l = \frac{g}{k} m$$
 
 \begin{figure}[htbp]
@@ -563,7 +573,8 @@ $$\Delta l = \frac{g}{k} m$$
     \includegraphics[width=0.8\textwidth]{Immagini/Statico_lvsm.png}
     \caption{Proporzionalità diretta tra $l_i$ e $m_i$}
 \end{figure}
-Gli errori sul grafico sono solamente quelli di misura delle lunghezze e masse, non risultano visibili con la scala scelta.
+Le incertezze associate alle misure di lunghezza e massa sono trascurabili rispetto alla scala
+adottata nel grafico e pertanto non sono visibili.
 
 \subsubsection*{Misura di k, metodo statico}
 Come si vede dalla teoria (!!!... non so se è inserito!!!) nel metodo statico k risulta essere:
@@ -634,6 +645,97 @@ Con errore associato $\sigma_{k_i}$ ignorando i contributi delle masse:
 
 $k$ è quindi stato calcolato con una media pesata dagli errori $\sigma_{k_i}$:
 $$k = (1.443 \pm 0.007) \text{ N/m}$$
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Immagini/Compatibilita_nmodello_dinamico.png}
+    \caption{Grafico di compatibilità dei $k_i$ senza l'utilizzo del modello della massa efficace.}
+\end{figure}
+\subsubsection*{Calcolo con modello della massa efficace}
+Utilizzando gli stessi valori per i periodi del modello precedente abbiamo calcolato la costante 
+utilizzando il modello della massa efficace con la seguente:
+$$k_i = 4\pi^2 \frac{M_{tot}}{T_i^2} \quad,\quad  M_{tot} = \frac{m_m}{3}+m_p+m_i$$
+Per quanto riguarda il $\sigma_{k_i}$ invece:
+$$\sigma_k^2 = k^2\left[\left(\frac{\sigma_{M_tot}}{M_{tot}}\right)^2+4\left(\frac{\sigma_{T_i}}{T_i}\right)^2\right]$$
+E $\sigma_{M_{tot}}:$
+$$\sigma_{M_{\text{tot}}} = \sqrt{\left(\frac{\sigma_{m_m}}{3}\right)^2 + \sigma_{m_p}^2 + \sigma_{m_i}^2} = \sqrt{\frac{19}{9}} \cdot \sigma_m $$
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{cccccccc}
+        \hline
+        $M_{tot}$ [g] & $\bar{T}_i$ [s] & $k_i$ [N/m] & $\sigma_{T_i}$ & $\sigma_{k_i}$ \\
+        \hline
+        35.07  & 0.9866 & 1.422 & 0.005 & 0.014 \\
+        40.40 & 1.0354  & 1.488 & 0.005 & 0.014 \\
+        50.10 & 1.1708  & 1.443 & 0.006 & 0.015 \\
+        60.13 & 1.2672  & 1.478 & 0.004 & 0.009 \\
+        80.09 & 1.4594  & 1.485 & 0.002 & 0.004 \\
+        \hline
+    \end{tabular}
+\end{table}
+$k$ è quindi stato calcolato con una media pesata dagli errori $\sigma_{k_i}$:
+$$k = (1.478 \pm 0.003) \text{ N/m}$$
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Immagini/Compatibilita_modello_dinamico.png}
+    \caption{Grafico di compatibilità dei $k_i$ con l'utilizzo del modello della massa efficace.}
+\end{figure}
+
+\subsection{Stima di $\gamma$}
+Per l'analisi del coefficiente di smorzamento $\gamma$ sono stati adottati due approcci:
+
+\begin{enumerate}
+    \item \textbf{Verifica puntuale della costanza di $\gamma$ (Analisi delle fluttuazioni):} 
+    In prima istanza, l'equazione teorica del decadimento esponenziale $A_i = A_0 e^{-\gamma(t_i-t_0)}$ è stata invertita per calcolare il valore del coefficiente d'attenuazione associato a ogni singolo punto sperimentale:
+    \begin{equation*}
+        \gamma_i = \frac{1}{t_i - t_0} \ln\left(\frac{A_0}{A_i}\right)
+    \end{equation*}
+    Ciascun valore $\gamma_i$ è stato corredato del proprio errore sperimentale $\Delta\gamma_i$, stimato mediante la legge di propagazione degli errori massimi:
+    \begin{equation*}
+        \frac{\Delta\gamma_i}{\gamma_i} = \frac{2\Delta t}{t_i - t_0} + \frac{2\Delta A}{\frac{A_0}{A_i} \ln\left(\frac{A_0}{A_i}\right)}
+    \end{equation*}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Immagini/Costanza_gamma.png}
+    \caption{Si nota che tutti i valori di $\gamma$ (tranne il primo) sono compatibili con un valore costante}
+\end{figure}
+    
+    \item \textbf{Linearizzazione e Fit Lineare (Stima ottimale del parametro):}
+    Una volta accertata la natura costante del parametro, si è proceduto alla stima numerica ottimale di $\gamma$ mediante la tecnica della linearizzazione logaritmica. Definendo le variabili trasformate $Y_i = \ln(A_0/A_i)$ e $X_i = t_i - t_0$, il modello esponenziale assume la forma lineare di una retta passante per l'origine $Y = mX$, dove il coefficiente angolare $m$ coincide esattamente con $\gamma$. 
+    
+    L'applicazione dell'algoritmo dei minimi quadrati consente di trovare un valore di $m$ con relativo errore:
+    \begin{align*}
+        m &= 0.001122267\text{ s}^{-1} \\
+        \Delta m &= 4.57784 \times 10^{-5}\text{ s}^{-1}
+    \end{align*}
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Immagini/Regressione_lambda.png}
+    \caption{Linearizzazione per ricavare $\gamma$ come coefficiente angolare}
+\end{figure}
+
+Quindi il valore di $\gamma$ è:
+\begin{equation*}
+    \gamma = (11.2 \pm 0.5) \times 10^{-4}\text{ s}^{-1}
+\end{equation*}
+
+\section{Conclusioni}
+In questa esperienza è stata determinata la costante elastica $k$ di una molla elicoidale (valore nominale = 1.5 N/m) confrontando un approccio statico e due varianti di un approccio dinamico. I risultati finali ottenuti sono:
+\begin{itemize}
+    \item Metodo statico: $k_{\text{stat}} = (1.491 \pm 0.005) \text{ N/m}$
+    \item Metodo dinamico (senza modello): $k_{\text{din1}} = (1.443 \pm 0.007) \text{ N/m}$
+    \item Metodo dinamico (con massa efficace): $k_{\text{din2}} = (1.478 \pm 0.003) \text{ N/m}$
+\end{itemize}
+
+
+Confrontando la stima statica $k_{\text{stat}}$ e la migliore stima dinamica $k_{\text{din2}}$, si osserva una discrepanza marginale (pari a circa $2\sigma$ combinati). 
+
+Infine, lo studio della dissipazione ha permesso di quantificare il coefficiente di smorzamento, risultato pari a $\gamma = (11.2 \pm 0.5) \times 10^{-4}\text{ s}^{-1}$. Essendo $\gamma \ll \omega_0$ (condizione di smorzamento debole), l'assunzione iniziale di poter trascurare le forze d'attrito per il calcolo del periodo di oscillazione e per la stima di $k$ nel metodo dinamico risulta, a posteriori, rigorosamente giustificata.
+
+
 
 
 

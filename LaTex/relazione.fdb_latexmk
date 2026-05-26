@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1779717067.64099 "/home/eddi/Desktop/Lab-Meccanica/Relazione_Molle/LaTex/relazione.tex" "relazione.pdf" "relazione" 1779717068.12959 0
+["pdflatex"] 1779789894.73421 "/home/eddi/Desktop/Lab-Meccanica/Relazione_Molle/LaTex/relazione.tex" "relazione.pdf" "relazione" 1779789895.33894 0
   "/etc/texmf/web2c/texmf.cnf" 1771968813.84324 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/eddi/Desktop/Lab-Meccanica/Relazione_Molle/LaTex/relazione.tex" 1779717066.90763 23062 f3a4cfa127ab5fc4301f922c3f096114 ""
+  "/home/eddi/Desktop/Lab-Meccanica/Relazione_Molle/LaTex/relazione.tex" 1779789894.47432 28670 3d92583144da20da284fdafe616334d3 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -91,6 +91,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1772031694.36836 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1772031713 8213557 43cd8f209ca212202fad7d3a4d0f6a52 ""
+  "Immagini/Compatibilita_modello_dinamico.png" 1779780134.62233 16153 d8e2358d3326dd7076b17d2f52a69959 ""
+  "Immagini/Compatibilita_nmodello_dinamico.png" 1779780121.25469 13600 44efd1db313a6ef37da67a9e1486fef5 ""
+  "Immagini/Costanza_gamma.png" 1779787131.55591 15555 02335a6d22907b8c20eade06aee26141 ""
+  "Immagini/Regressione_lambda.png" 1779787118.88789 25447 44f7b777a61b2da7a2bfdaf7359b9587 ""
   "Immagini/Statico_kvsm.png" 1779701890.98841 18126 ead189b95b9c40e1fb2d8cad7403fe76 ""
   "Immagini/Statico_lvsm.png" 1779702409.21177 19156 2163889c7af197d10ede1017067891fb ""
   "Immagini/istogramma_dinamico_1.png" 1779708453.96553 11280 540215270883c21a7086d0befd5180bb ""
@@ -98,9 +102,9 @@
   "Immagini/istogramma_dinamico_3.png" 1779708475.5488 11254 274bf608acba3b884ee2f9c655cd7fdd ""
   "Immagini/istogramma_dinamico_4.png" 1779708490.23621 12105 cfb37ffd7535525cd6f1a0d2c7a3ae81 ""
   "Immagini/istogramma_dinamico_5.png" 1779708499.55689 8314 b4dddd4749d6c5daacc7a7d98e238a2c ""
-  "relazione.aux" 1779717068.08863 4909 d75de9d83f2039b9e4b554c9a4edd747 "pdflatex"
-  "relazione.tex" 1779717066.90763 23062 f3a4cfa127ab5fc4301f922c3f096114 ""
-  "relazione.toc" 1779717068.08963 1526 29a3635aa6ed1496beb002a14e2c3046 "pdflatex"
+  "relazione.aux" 1779789895.30032 6390 b242ba9d9fbf9741755b1ca42507bd98 "pdflatex"
+  "relazione.tex" 1779789894.47432 28670 3d92583144da20da284fdafe616334d3 ""
+  "relazione.toc" 1779789895.30032 1815 6e6aefd55c66c7061e88fdcd665c36bc "pdflatex"
   (generated)
   "relazione.aux"
   "relazione.log"

@@ -5,9 +5,9 @@
 \contentsline {subsection}{\numberline {2.1}Deformazione elastica}{2}{}%
 \contentsline {subsection}{\numberline {2.2}Metodo statico}{2}{}%
 \contentsline {subsection}{\numberline {2.3}Metodo dinamico}{3}{}%
-\contentsline {subsection}{\numberline {2.4}Massa efficace statica}{4}{}%
-\contentsline {subsection}{\numberline {2.5}Massa efficace dinamica}{5}{}%
-\contentsline {subsection}{\numberline {2.6}Metodo dinamico con attriti}{6}{}%
+\contentsline {subsection}{\numberline {2.4}Massa efficace dinamica}{4}{}%
+\contentsline {subsection}{\numberline {2.5}I due modelli utilizzati}{5}{}%
+\contentsline {subsection}{\numberline {2.6}Metodo dinamico con attriti}{5}{}%
 \contentsline {section}{\numberline {3}Apparato sperimentale}{7}{}%
 \contentsline {section}{\numberline {4}Procedura sperimentale}{7}{}%
 \contentsline {subsection}{\numberline {4.1}Misure preliminari}{7}{}%
@@ -17,6 +17,10 @@
 \contentsline {section}{\numberline {5}Risultati delle Misure}{8}{}%
 \contentsline {subsection}{\numberline {5.1}Misure Statiche}{8}{}%
 \contentsline {subsection}{\numberline {5.2}Misure Dinamiche ed Istogrammi delle Distribuzioni}{9}{}%
-\contentsline {subsection}{\numberline {5.3}Analisi dati}{11}{}%
-\contentsline {subsubsection}{\numberline {5.3.1}Metodo statico}{11}{}%
-\contentsline {subsubsection}{\numberline {5.3.2}Metodo dinamico}{13}{}%
+\contentsline {subsection}{\numberline {5.3}Raccolta dati per il decadimento dell'ampiezza}{11}{}%
+\contentsline {section}{\numberline {6}Analisi dati}{11}{}%
+\contentsline {subsection}{\numberline {6.1}Stima di k}{11}{}%
+\contentsline {subsubsection}{\numberline {6.1.1}Metodo statico}{11}{}%
+\contentsline {subsubsection}{\numberline {6.1.2}Metodo dinamico}{13}{}%
+\contentsline {subsection}{\numberline {6.2}Stima di $\gamma $}{15}{}%
+\contentsline {section}{\numberline {7}Conclusioni}{17}{}%
